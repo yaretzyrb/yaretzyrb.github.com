@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Los libros de Yaretzy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script defer src="./java.js"></script>
+</head>
+
+<body>
+    <!--NAV INICIO-->
+    <div class="all-content">
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html" id="logo"><img src="./img/LOGO.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars" style="color: rgb(24, 93, 152); font-size: 23px"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="pagina.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="recomendacionsemanal.html">Recomendación semanal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoritos.html">Favoritos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Géneros
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="fantasia.html">Fantasía</a></li>
+                                <li><a class="dropdown-item" href="romance.html">Romance</a></li>
+                                <li><a class="dropdown-item" href="paranormal.html">Paranormal</a></li>
+                                <li><a class="dropdown-item" href="saludmental.html">Salud mental</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--NAV FINAL-->
+
+        <!--PORTADA INICIO-->
+        <section id="home">
+            <div class="container-fluid">
+                <h1>Bienvenido</h1>
+                <p>Aquí podrás encontrar recomendaciones <br>para tu próxima lectura.</p>
+                <a href="#menu"><button id="boton1">¡Comenzar a explorar!</button></a>
+            </div>
+        </section>
+        <!--PORTADA FINAL-->
+
+        <!--MENU INICIO-->
+        <div class="container-fluid text-center" id="menu">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/yo.jpg" alt="imgchica" class="img-fluid">
+                    <a href="#sobremi">
+                        <h1>Sobre mí</h1>
+                    </a>
+                    <p>Conoce más sobre mí y los libros que me gustan.</p>
+                    <a href="#sobremi"><button>Ver más</button></a>
+                </div>
+
+                <div class="col">
+                    <img src="./img/libros2.jpg" alt="imglibro" class="img-fluid">
+                    <a href="#leyendo">
+                        <h1>Leyendo</h1>
+                    </a>
+                    <p>¿Qué estoy leyendo actualmente? Da click para ver las actualizaciones sobre los libros que estoy
+                        leyendo actualmente.</p>
+                    <a href="#leyendo"><button>Ver más</button></a>
+                </div>
+
+                <div class="col">
+                    <img src="./img/libros1.jpg" alt="imgtorre" class="img-fluid">
+                    <a href="#proximaslecturas">
+                        <h1>Próximas lecturas</h1>
+                    </a>
+                    <p>¿Quieres conocer mi próxima lectura? ¿Tienes alguna recomendación? ¡Compárteme tu opinión aquí!
+                    </p>
+                    <a href="#proximaslecturas"><button>Ver más</button></a>
+
+                </div>
+            </div>
+        </div>
+        <!--MENU FIN-->
+
+        <!--ULTIMOS AGREGADOS INICIO-->
+        <div class="container text-start">
+            <h1>Últimos agregados</h1>
+            <!--INICIA TAN POCA VIDA-->
+            <div class="row" id="caja">
+                <div class="col-sm-4">
+                    <img src="./img/tanpocavida.jpg" class="img-fluid" alt="tanpocavida">
+                </div>
+                <div class="col-sm-8">
+                    <h2>Tan poca vida</h2>
+                    <h3><small class="text-body-secondary"><em>Hanya Yanagihara</em></small></h3>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>“What he knew, he knew from books, and books lied, they made things prettier.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Hanya Yanagihara, <cite title="Source Title">A Little Life</cite>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <h4 class="subtitulo">Sinopsis</h4>
+                        <p>Cuando cuatro compañeros de una pequeña universidad de Massachusetts se mudan a Nueva York
+                            para
+                            abrirse camino, están arruinados, a la deriva y sólo animados por su amistad y ambición.
+                            Está el
+                            amable y guapo Willem, un aspirante a actor; JB, un pintor nacido en Brooklyn, ingenioso y a
+                            veces cruel, que busca entrar en el mundo del arte; Malcolm, un arquitecto frustrado de una
+                            destacada firma; y el retraído, brillante y enigmático Jude, que les sirve de centro de
+                            gravedad. Con el paso de las décadas, sus relaciones se profundizan y oscurecen, teñidas de
+                            adicción, éxito y orgullo.</p>
+                        <span class="hideText">
+                            <p>Sin embargo, cada uno se da cuenta de que su mayor desafío es
+                                el
+                                propio Jude, quien en la mediana edad es un litigante terriblemente talentoso pero un
+                                hombre
+                                cada vez más destrozado, con la mente y el cuerpo marcados por una infancia
+                                indescriptible y
+                                atormentado por lo que teme sea un grado de trauma que él mismo no ha logrado. No sólo
+                                no
+                                podrá
+                                superarlo, sino que eso definirá su vida para siempre.
+                            </p>
+                            <h4 class="subtitulo">Reseña</h4>
+                            <p>Puede parecer presuntuoso decir que en febrero he leído el mejor libro que he leído en
+                                todo
+                                el
+                                año, pero la lectura se parece mucho al amor. A veces simplemente lo sabes. <br>Tan pocs
+                                vida es
+                                un título con 3 significados. En primer lugar, se refiere a su protagonista, Jude, un
+                                hombre
+                                que
+                                nunca puede aceptar que su vida vale la pena. En segundo lugar, se refiere al acto de
+                                leerlo,
+                                pasar tiempo en este libro es realmente como vivirlo en vida propia. <br>Hay un tercer
+                                significado, uno que no descubres hasta aproximadamente la mitad del libro, cuando las
+                                palabras
+                                del título se usan en un contexto que se siente como un puñetazo en el estómago. Cuando
+                                los
+                                leas, es posible que tengas una reacción física, que tu estómago se revuelva, que tu
+                                piel se
+                                enfríe y que te quedes sin aliento. Y así es en gran medida la experiencia de leer este
+                                libro.
+                                Puedes llamar a estas partes del libro palabras que definirías como "horribles", pero
+                                para
+                                ser
+                                real tendrías que sacar tu diccionario de sinónimos y simplemente alinearlas una tras
+                                otra.
+                                Este
+                                no es un libro que sea fácil para tus emociones. Te preocupas por las personas que
+                                participan en
+                                él, por lo que el dolor realmente puede hacerte daño. <br>Habrás escuchado que este es
+                                un
+                                libro
+                                sobre 4 amigos. No lo es. Son un buen recurso para encuadrar, pero este es un libro
+                                sobre
+                                una
+                                persona y las personas que están conectadas con ella. Su vida está hecha de extremos. Me
+                                encontré llorando una y otra vez por el amor, la compasión y la bondad que mostraban los
+                                personajes del libro. Pero este libro tiene algunas de las escenas más desgarradoras y
+                                horrorosas que he leído jamás. Realmente no es estropear nada decir que esto implica que
+                                le
+                                sucedan cosas terribles a un niño. Todo el mundo sabe desde el principio que algo malo
+                                le
+                                pasó a
+                                Jude cuando era joven. Es mucho peor de lo que puedas imaginar. (Si tiene problemas para
+                                leer
+                                sobre el abuso infantil, probablemente sea mejor que no lea este libro. Si bien es
+                                esencial
+                                para
+                                la historia, no se pasa por alto ni se hace referencia vaga a él y lo que se describe es
+                                realmente terrible de contemplar). <br>Jude no es un personaje nuevo. El alma dañada
+                                cuya
+                                autoestima nunca se recupera realmente está presente en mucha ficción moderna. Creo que
+                                el
+                                truco
+                                de Yanagihara es cuán dispuesta está a sondear las profundidades de su oscuridad y sus
+                                efectos
+                                en quienes lo rodean. Ella lo sigue durante décadas, lo observa en todas las situaciones
+                                y
+                                es
+                                inquebrantable en sus representaciones. Su escritura es el tipo de cosas buenas que te
+                                puedes
+                                perder si no prestas atención. Estás tan atrapado en su historia que es fácil pasar por
+                                alto
+                                lo
+                                ágil y cuidadoso que es el libro. Va y viene de un personaje a otro, avanza y retrocede
+                                en
+                                el
+                                tiempo, y nunca se siente aburrido. <br>Me quedé despierto durante horas para terminar
+                                este
+                                libro y luego no pude dormir porque no podía dejarlo ir. Me sentí abrumado por el libro
+                                y
+                                por la
+                                pérdida al terminarlo. <br>Este es un libro sobre el amor y lo que significa y lo que
+                                puede
+                                hacer, y es la humanidad de sus personajes y su amor mutuo lo que se quedará conmigo.
+                            </p>
+                            <h4 class="subtitulo">Multimedia</h4>
+                            <div class="container text-center">
+                                <div class="row" id="multimedia">
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=1829656089958396"
+                                            height="390" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=17592254788587715"
+                                            height="390" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=12596073951705640"
+                                            height="390" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/6OE4MH7DMBuB4s8XWUEDan?utm_source=generator"
+                                width="100%" height="200" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </span>
+                    </div>
+                    <button class="read-more-btn">¡Cuéntame más!</button>
+                </div>
+            </div>
+            <!--TERMINA TAN POCA VIDA-->
+
+            <!--INICIA CLOUDS-->
+            <div class="row" id="caja">
+                <div class="col-sm-4">
+                    <img src="./img/cloud.jpg" class="img-fluid" alt="cloud">
+                </div>
+                <div class="col-sm-8">
+                    <h2>Clouds</h2>
+                    <h3><small class="text-body-secondary"><em>Kim Pas</em></small></h3>
+                    <div>
+                        <h4 class="subtitulo">Sinopsis</h4>
+                        <p>Skylar tiene un pasatiempo secreto: tomar fotografías de su amor platónico, Chan-il. Pero
+                            cuando
+                            Cirrus se topa con el almacenamiento en la nube de Skylar con su impresionante colección de
+                            fotografías de Chan-il, las cosas empeoran bastante rápidamente. Al principio confiado en
+                            que su
+                            secreto está a salvo con Cirrus, Skylar se encuentra continuamente en situaciones
+                            comprometedoras,
+                            lo que le hace cuestionar los verdaderos motivos de Cirrus.<br></p>
+                        <span class="hideText">
+                            <h4 class="subtitulo">Reseña</h4>
+                            <p>No me esperaba que el manhwa fuese a tratar temas tan serios y fuertes. Muchas escenas me
+                                dejaron un mal trago y me hicieron sentir algo mal, pero realmente la historia es
+                                interesante y buena.
+                                No puedo creer lo mucho que amo a Skylar y Cirrus.
+                                Cuando explicaron lo que pasó con Skylar, no pude evitar recordar uno de mis libros
+                                favoritos ya que sucede una situación similar que fue algo dolorosa de leer. Es que
+                                nadie debe sentirse mal y ni ser tratado así solo por gustar de otra persona.
+                                Cirrus, por su lado, tiene una personalidad bastante engañosa ya que busca ocultar cómo
+                                es en realidad, se oculta tras una faceta de un chico que se lleva bien con todos y
+                                siempre es amable, cuando en realidad a veces solo quiere mandarlos a todos a volar,
+                                AMO. Y también este niño tiene muchas cargas internas (para familias como esas mejor
+                                solo).
+                                Esa dinámica de Cirrus molestando a Skylar mientras este lo ignora o lo aparta, es mi
+                                imperio romano.
+                                Ahora mismo me voy a la segunda temporada.
+                            </p>
+                            <h4 class="subtitulo">Multimedia</h4>
+                            <div class="container text-center">
+                                <div class="row" id="multimedia">
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=152911349841279090"
+                                            height="310" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=576883033542615549"
+                                            height="337" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=760756562081689994"
+                                            height="398" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/7o7xmrKtm0pDZgQQsvWByi?utm_source=generator"
+                                width="100%" height="200" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </span>
+                    </div>
+                    <button class="read-more-btn">¡Cuéntame más!</button>
+
+                </div>
+            </div>
+            <!--TERMINA CLOUDS-->
+
+            <!--INICIA WENDY DARLING-->
+            <div class="row" id="caja">
+                <div class="col-sm-4">
+                    <img src="./img/sombra.jpg" class="img-fluid" alt="sombra">
+                </div>
+                <div class="col-sm-8">
+                    <h2>Wendy Darling #3: La Sombra</h2>
+                    <h3><small class="text-body-secondary"><em>Colleeen Oakes</em></small></h3>
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>“Because fear doesn't care if you are lying down or standing; it comes either way. And I
+                                would rather be standing when it comes for me.”</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer">
+                            Colleeen Oakes, <cite title="Source Title">Wendy Darling #3: La Sombra</cite>
+                        </figcaption>
+                    </figure>
+                    <div>
+                        <h4 class="subtitulo">Sinopsis</h4>
+                        <p>Wendy Darling descansará una vez más en los brazos del encantador Peter Pan, el dios-niño que
+                            desea poder sobre todas las cosas. Esta vez, sin embargo, Wendy no arde con pasión, sino con
+                            un
+                            secreto: con Hook como su aliado, ella está ahí para vencer el mal que yace dentro de Peter,
+                            el
+                            mal que
+                            sostiene a todos los de nunca jamás rehenes: La Sombra. Wendy deberá vencer sigilosamente a
+                            Peter desde el interior de su corazón; al mismo tiempo, convencer a Campanita de traicionar
+                            el
+                            amor
+                            retorcido que los une.</p>
+                        <span class="hideText">
+                            <p>Todos en Nunca Jamás se preparan para la guerra. Wendy hará todo lo
+                                posible para romper la conexión de Peter con La Sombra. Cuando llegue el momento, los
+                                piratas,
+                                las
+                                sirenas, los niños perdidos y la familia Darling se levantarán en armas, pero si Wendy
+                                no puede
+                                invocar a
+                                La Sombra, todos serán destruidos por el alma oscura de Peter. La guerra ha llegado al
+                                paraíso,
+                                y
+                                Nunca Jamás ya no será el mismo.</p>
+                            <h4 class="subtitulo">Reseña</h4>
+                            <p>Shadow, el tercer y último libro de esta versión de Peter Pan, es mucho más adulto en
+                                función de las situaciones, el lenguaje y las situaciones. La pobre Wendy sufre abusos
+                                de muchas maneras porque Peter Pan es psicótico. Pero aunque sufre, sigue siendo fuerte
+                                y tiene un plan. La animas mientras intenta derrotar a Peter Pan y rescatar a su único
+                                amor verdadero: Booth. También la relación con John, que era muy tensa y desgarradora,
+                                se resuelve de forma satisfactoria. <br>La escritura es muy rica y audaz, con muchos
+                                personajes a los que seguir la pista. El giro del Capitán Garfio está muy bien hecho,
+                                incluido por qué Peter puede o no ser tan malvado. Las hadas juegan un papel importante
+                                aquí, y las batallas que se convierten en guerras son muy descriptivas y realistas. Los
+                                pasos que Oakes ha tomado para mostrar a Wendy como una chica aparentemente tonta y con
+                                recursos para una joven madura, según su experiencia con Peter y su relación con Booth
+                                (tienen un momento de intimidad que es el paso final para transformarla en una mujer
+                                real) está bien hecho. Además, el HEA de Wendy puede sorprender a algunos lectores por
+                                la decisión final sobre su futuro y el de sus hermanos. <br>Shadow no me dejó sin
+                                aliento como el primer libro de esta trilogía, pero de todos modos hizo un buen trabajo.
+                                <br>Los fanáticos del mito de Peter Pan y el de Wendy Darling quedarán satisfechos con
+                                la versión de Colleen Oakes de un querido cuento infantil.
+                            </p>
+                            <h4 class="subtitulo">Multimedia</h4>
+                            <div class="container text-center">
+                                <div class="row" id="multimedia">
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=487092515959769395"
+                                            height="392" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=95771929568405837"
+                                            height="415" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                    <div class="col">
+                                        <iframe src="https://assets.pinterest.com/ext/embed.html?id=457467274666410428"
+                                            height="520" width="236" frameborder="0" scrolling="no"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/1XJ5pcQnmXsNP5ZWlLf8hb?utm_source=generator"
+                                width="100%" height="200" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                                loading="lazy"></iframe>
+                        </span>
+                    </div>
+                    <button class="read-more-btn">¡Cuéntame más!</button>
+                </div>
+                <!--TERMINA WENDY DARLING-->
+                <!--ULTIMOS AGREGADOS FINAL-->
+
+            </div>
+
+            <!--LEYENDO INICIO-->
+            <div class="container text-start" id="leyendo">
+                <h1>Leyendo</h1>
+                <!--INICIA AOBG30D-->
+                <div class="row" id="caja">
+                    <div class="col-sm-4">
+                        <img src="./img/aobg30d.jpg" class="img-fluid" alt="aobg30d">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Agreetment of Being Gay for 30 Days</h2>
+                        <h3><small class="text-body-secondary"><em>Lin Zhiluo</em></small></h3>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>"Sometimes, an appropriate atmosphere can reduce people’s unease and restlessness. It
+                                    can transform something that was once unthinkable to one that feels reasonable and
+                                    right."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Lin Zhiluo, <cite title="Source Title">Agreetment of Being Gay for 30 Days</cite>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h4 class="subtitulo">Sinopsis</h4>
+                            <p>Los dos hombres más atractivos de la Universidad F, Wang Guangning y Zhang Lingyi,
+                                siempre competían entre sí sin importar en qué aspecto. Desde la apariencia hasta el
+                                talento, desde la popularidad e incluso hasta la cantidad de músculos abdominales,
+                                siempre competían entre sí. Incluso la mujer que perseguían era la misma. Sin embargo,
+                                estos dos xiao cao¹ que se habían autoproclamado incomparables en el aspecto del amor,
+                                fueron completamente rechazados por la misma mujer. De ahí que decidieron tomar
+                                represalias contra la sociedad volviéndose homosexuales. </p>
+                            <span class="hideText">
+                                <p>Mediante el método de lanzar una moneda, los dos jóvenes determinaron quién sería el
+                                    gong² y quién sería el shou². Al establecer un acuerdo para ser homosexuales juntos
+                                    durante treinta días, fueron muy profesionales e incluso siguieron las "30 cosas que
+                                    las parejas deben hacer juntas" descargadas de Internet y así se prepararon para
+                                    seguir los procedimientos estándar para ser homosexuales por primera vez.</p>
+                                <h4 class="subtitulo">Últimas actualizaciones</h4>
+                                <!--INCIAN ACTUALIZACIONES-->
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>1d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        Llegué al capítulo 52 pero ya para este punto perdí mucho el interés...
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>2d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        De repenté tomó un ritmo muy rápido el libro 😳
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>3d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        No voy a mentir, me estoy empezando a desesperar con los personajes.
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>5d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        El humor de la novela está bueno pero a veces es demasiado.
+                                    </div>
+                                </div>
+                                <!--TERMINAN ACTUALIZACIONES-->
+                            </span>
+                        </div>
+                        <button class="read-more-btn">¡Cuéntame más!</button>
+                    </div>
+                </div>
+                <!--TERMINA AOBG30D-->
+                <!--INICIA THESE VIOLENT DELIGHTS-->
+                <div class="row" id="caja">
+                    <div class="col-sm-4">
+                        <img src="./img/delights.jpg" class="img-fluid" alt="aobg30d">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>These Violent Delights</h2>
+                        <h3><small class="text-body-secondary"><em>Chloe Gong</em></small></h3>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>“This is why my betrayal was so terrible. Because you believed me incapable of
+                                    hurting you, and yet I did.”</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Chloe Gong, <cite title="Source Title">These Violent Delights</cite>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h4 class="subtitulo">Sinopsis</h4>
+                            <p>Una disputa sangrienta entre dos pandillas tiñe las calles de rojo, dejando a la ciudad
+                                indefensa en las garras del caos. En el centro de todo está Juliette Cai, de dieciocho
+                                años, una ex flapper que ha regresado para asumir su papel de orgullosa heredera de
+                                Scarlet Gang, una red de criminales muy por encima de la ley. Sus únicos rivales en el
+                                poder son las Flores Blancas, que han luchado contra los Escarlatas durante
+                                generaciones. Y detrás de cada movimiento está su heredera, Roma Montagov, el primer
+                                amor de Juliette... y su primera traición.</p>
+                            <span class="hideText">
+                                <p>Pero cuando los gánsteres de ambos bandos muestran signos de inestabilidad que
+                                    culminan en arrancarse la garganta con garras, la gente empieza a susurrar. De un
+                                    contagio, de una locura. De un monstruo en las sombras. A medida que las muertes se
+                                    acumulan, Juliette y Roma deben dejar sus armas (y sus rencores) a un lado y
+                                    trabajar juntos, porque si no pueden detener este caos, no quedará ninguna ciudad
+                                    para que ninguno de los dos gobierne. Perfecto para los fanáticos de El último mago
+                                    y El descendiente de la grulla, este impactante debut es una imaginativa narración
+                                    de Romeo y Julieta ambientada en el Shanghai de los años 20, con pandillas rivales y
+                                    un monstruo en las profundidades del río Huangpu.</p>
+                                <h4 class="subtitulo">Últimas actualizaciones</h4>
+                                <!--INCIAN ACTUALIZACIONES-->
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>5d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        Ya voy a la mitad pero leer la otra mitad no es que me emocione mucho.
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>18d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        ¿Por qué todo es tan lento y aburrido? Ninguno de los personajes me interesa lo
+                                        suficiente.
+                                    </div>
+                                </div>
+
+                                <div class="container-fluid comentarioheader">
+                                    <img src="./img/perfil.jpg" class="rounded me-2" alt="perfil" width="40px"
+                                        height="40px">
+                                    <strong class="me-auto">Yaretzy</strong>
+                                    <small>21d</small>
+                                </div>
+                                <div class="container-fluid comentario">
+                                    <div>
+                                        Lo empezamos porque el hype es grande 👀
+                                    </div>
+                                </div>
+                                <!--TERMINAN ACTUALIZACIONES-->
+                            </span>
+                        </div>
+                        <button class="read-more-btn">¡Cuéntame más!</button>
+                    </div>
+                </div>
+                <!--TERMINA THESE VIOLENT DELIGHTS-->
+                <!--LEYENDO FIN-->
+            </div>
+
+            <!--PRÓXIMAS LECTURAS INICIO-->
+            <div class="container text-start" id="proximaslecturas">
+                <h1>Próximas lecturas</h1>
+                <!--INICIA GUERRERO-->
+                <div class="row" id="caja">
+                    <div class="col-sm-4">
+                        <img src="./img/guerrero.jpg" class="img-fluid" alt="guerrero">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>The Celestial Kingdom #2: El corazón del guerrero del sol</h2>
+                        <h3><small class="text-body-secondary"><em>Sue Lynn Tan</em></small></h3>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>“Love is a privilege, not a possession. We can’t control our own feelings, much less
+                                    those of others.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Sue Lynn Tan, <cite title="Source Title">El corazón del guerrero del sol</cite>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h4 class="subtitulo">Sinopsis</h4>
+                            <p>La esperada secuela de La hija de la diosa de la luna nos sumerge de nuevo en la
+                                mitología china, concluyendo la historia de Xingyin -hija de Chang'e y del arquero
+                                mortal Houyi- en su lucha contra una nueva amenaza. Una poderosa historia de amor,
+                                sacrificio y esperanza. Tras conseguir que el Emperador Celestial libere a su madre,
+                                Xingyin sigue creciendo en la tranquilidad de su hogar. Pero su frágil paz se ve
+                                amenazada por el descubrimiento de una extraña magia en la luna y por los inquietantes
+                                cambios en el Reino Celestial a medida que el emperador intensifica su poder.</p>
+                            <span class="hideText">
+                                <p>Y aunque Xingyin está decidida a mantenerse alejada del peligro, el descubrimiento de
+                                    una impactante verdad la incita a un peligroso enfrentamiento. Obligados a huir de
+                                    su hogar una vez más, Xingyin y sus compañeros se adentran en las inexploradas
+                                    tierras del Reino Inmortal, hallando a criaturas legendarias y astutos monarcas,
+                                    queridos amigos y duros adversarios.</p>
+                        </div>
+                        <button class="read-more-btn">¡Cuéntame más!</button>
+                    </div>
+                </div>
+                <!--TERMINA GUERRERO-->
+
+                <!--INICIA CRYING-->
+                <div class="row" id="caja">
+                    <div class="col-sm-4">
+                        <img src="./img/crying.jpg" class="img-fluid" alt="crying">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Crying in H Mart</h2>
+                        <h3><small class="text-body-secondary"><em>Michelle Zauner</em></small></h3>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>“It felt like the world had divided into two different types of people, those who had
+                                    felt pain and those who had yet to.”</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Michelle Zauner, <cite title="Source Title">Crying in H Mart</cite>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h4 class="subtitulo">Sinopsis</h4>
+                            <p>Una memoria sobre cómo crecer como coreano-estadounidense, perder a su madre y forjar su
+                                propia identidad. Michelle Zauner cuenta cómo creció como uno de los pocos niños
+                                asiático-americanos en su escuela en Eugene, Oregon; de luchar con las altas
+                                expectativas particulares que su madre tenía sobre ella; de una adolescencia dolorosa;
+                                de los preciados meses pasados en el diminuto apartamento de su abuela en Seúl, donde
+                                ella y su madre se unían, a altas horas de la noche, frente a platos repletos de comida.
+                            </p>
+                            <span class="hideText">
+                                <p>A medida que creció, se mudó a la costa este para ir a la universidad, encontró
+                                    trabajo en la industria de restaurantes y actuó con su incipiente banda (y conoció
+                                    al hombre que se convertiría en su marido), su condición de coreana comenzó a
+                                    sentirse cada vez más distante, incluso cuando ella encontró la vida que quería
+                                    vivir. Fue el diagnóstico de cáncer terminal de su madre, cuando Michelle tenía
+                                    veinticinco años, lo que la obligó a reconsiderar su identidad y la llevó a reclamar
+                                    los dones del gusto, el lenguaje y la historia que su madre le había dado.</p>
+                        </div>
+                        <button class="read-more-btn">¡Cuéntame más!</button>
+                    </div>
+                </div>
+                <!--TERMINA CRYING-->
+
+                <!--INICIA RESTRICTED AREA-->
+                <div class="row" id="caja">
+                    <div class="col-sm-4">
+                        <img src="./img/restricted.jpg" class="img-fluid" alt="restrictedarea">
+                    </div>
+                    <div class="col-sm-8">
+                        <h2>Restricted Area</h2>
+                        <h3><small class="text-body-secondary"><em>Empty Chrysanthemum</em></small></h3>
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>“Love is a privilege, not a possession. We can’t control our own feelings, much less
+                                    those of others.</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                Empty Chrysanthemum, <cite title="Source Title">Restricted Area</cite>
+                            </figcaption>
+                        </figure>
+                        <div>
+                            <h4 class="subtitulo">Sinopsis</h4>
+                            <p>Jiang Chijing siempre había vigilado cada movimiento de los prisioneros para saciar su
+                                apetito voyerista. Hasta que un día, un convicto extremadamente peligroso entró en la
+                                prisión y descubrieron a Jiang Chijing espiándolo. El observador se convirtió en
+                                observado, el cazador en cazado. Frente a Zheng Mingyi, que se acercaba más a cada paso,
+                                Jiang Chijing se vio obligado a apoyar los brazos contra el pecho del otro,
+                                advirtiéndole: “Esta es mi área restringida. Por favor sal."</p>
+
+                        </div>
+                    </div>
+                    <!--TERMINA RESTRICTED AREA-->
+
+                    <!--INICIAN COMENTARIOS-->
+                    <div class="mb-3">
+                        <h2 class="subtitulo">¿Tienes algún comentario y/o recomendación?</h2>
+                        <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="correo@electrónico.com">
+                        <div class="h4 pb-2 mb-4 border-bottom border-white">
+                        </div>
+                        <label for="exampleFormControlTextarea1" class="form-label">¡Compárteme tu opinión!</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="button" class="btn btn-light">Enviar</button>
+                    </div>
+                    <!--TERMINAN COMENTARIOS-->
+                </div>
+
+
+                <!--PRÓXIMAS LECTURAS FIN-->
+
+                <!--SOBRE MÍ INICIO-->
+                <div class="container text-start" id="sobremi">
+                    <h1>Sobre mí</h1>
+                    <div class="row" id="caja">
+                        <div class="col-sm-4">
+                            <img src="./img/sobremi.jpg" class="img-fluid" alt="sobremi">
+                        </div>
+                        <div class="col-sm-8">
+                            <h2>Platiquemos un poquito...</h2>
+                            <p>Hola, mi nombre es Yaretzy pero me gusta que me digan Yare solamente. La lectura se
+                                volvió un hábito para mí desde que tengo 13 años, desde entonces un libro siempre me
+                                acompaña y las letras se volvieron un refugio para mí. Me gusta leer además de libros,
+                                mangas y webtoon. Mis géneros favoritos son el romance, la fantasía, sobre la salud
+                                mental y/o psicología y el thriller. También me gusta escribir, dibujar, y me interesa
+                                el aprendizaje de idiomas, de momento estoy aprendiendo coreano y chino. Amo estar en
+                                contacto con la naturaleza. Mi color favorito es el verde. Dentro de mis gustos
+                                músicales está el k-pop, específicamente un grupo llamado EXO (mi bias es Jongdae);
+                                además de ellos me gustan cantantes como Aurora, Alice et Moi, Foreign Air, Twenty One
+                                Pilots, entre otros.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--SOBRE MÍ FIN-->
+                <!--INICIA FOOTER-->
+                <footer>
+                    <div class="container">
+                        <div class="row">
+                            <p>¿Quieres conocer más libros? ¡Sigueme en mis redes!</p>
+                        </div>
+                        <div class="row">
+                            <ul>
+                                <div class="col-sm">
+                                    <a href=https://www.instagram.com><img src="./img/instagram.png" alt="imgins">
+                                        <li>Instagram</li>
+                                    </a>
+                                </div>
+                                <div class="col-sm">
+                                    <a href=https://www.goodreads.com><img src="./img/goodreads.png" alt="imggoodreads">
+                                        <li>Goodreads</li>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="col-sm">
+                                        <a href=https://www.tiktok.com><img src="./img/tiktok.png" alt="imgtiktok">
+                                            <li>TikTok</li>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                        </ul>
+                </footer>
+                <!--TERMINA FOOTER-->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                    crossorigin="anonymous"></script>
+</body>
+
+</html>
